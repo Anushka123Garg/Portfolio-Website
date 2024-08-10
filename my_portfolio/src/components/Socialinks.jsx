@@ -14,7 +14,7 @@ const Socialinks = () => {
         </>
       ),
       href: 'https://www.linkedin.com/in/anushka-garg-28664922b/',
-      style: 'rounded-tr-md' //top-right
+      style: 'rounded-tr-md'
     },
     {
       id: 2,

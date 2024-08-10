@@ -25,7 +25,7 @@ const About = () => {
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-justify">
             As a proactive problem-solver and a team player, I stay ahead of emerging technologies 
             to ensure that my applications are both innovative and scalable. I am always on the lookout for new 
-            opportunities to collaborate in the tech industry. Let’s innovate together!
+            opportunities to collaborate in the tech industry.
           </p>
         </div>
       </div>

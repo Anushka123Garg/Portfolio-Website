@@ -1,7 +1,8 @@
 import React from "react";
-import leetcode from "../assets/leetcode.png";
-import resume from "../assets/resume.png";
+import leetcode from "../assets/leetcode.svg";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const Contact = () => {
   return (
@@ -55,6 +56,14 @@ const Contact = () => {
         {/* Social media icons for small screens */}
         <div className="flex justify-center space-x-4 pt-8 md:hidden">
           <a
+            href="mailto:anushkagarg2912@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white text-2xl hover:text-gray-400"
+          >
+            <HiOutlineMail />
+          </a>
+          <a
             href="https://www.linkedin.com/in/anushka-garg-28664922b/"
             target="_blank"
             rel="noopener noreferrer"
@@ -84,7 +93,7 @@ const Contact = () => {
             rel="noopener noreferrer"
             className="text-white text-2xl hover:text-gray-400"
           >
-            <img src={resume} alt="resume" className="w-6 h-6 rounded" />
+            <BsFillPersonLinesFill />
           </a>
         </div>
       </div>
