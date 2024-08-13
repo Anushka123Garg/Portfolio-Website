@@ -1,33 +1,35 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import meh from "../assets/meh.jpg";
 import './style.css';
 
 const phrases = [
-  "Full Stack Developer",
-  "Web Enthusiast",
-  "Problem Solver",
+  "Full Stack Developer.",
+  "Web Enthusiast.",
+  "Problem Solver.",
 ];
 
 const Home = () => {
   const [currentPhrase, setCurrentPhrase] = useState(0);
   const [displayedPhrase, setDisplayedPhrase] = useState("");
+  const typingIntervalRef = useRef(null);
 
   useEffect(() => {
     const currentPhraseText = phrases[currentPhrase];
     let charIndex = 0;
 
-    const typingInterval = setInterval(() => {
+    typingIntervalRef.current = setInterval(() => {
       setDisplayedPhrase(currentPhraseText.slice(0, charIndex + 1));
       charIndex += 1;
       if (charIndex > currentPhraseText.length) {
-        clearInterval(typingInterval);
+        clearInterval(typingIntervalRef.current);
         setTimeout(() => {
           setCurrentPhrase((prev) => (prev + 1) % phrases.length);
         }, 1500); // Pause before switching phrase
       }
-    }, 100); // Speed of typing animation
+    }, 80); // Speed of typing animation
 
-    return () => clearInterval(typingInterval); // Clean up on unmount
+    // Cleanup interval on component unmount
+    return () => clearInterval(typingIntervalRef.current);
   }, [currentPhrase]);
 
   return (
@@ -42,7 +44,7 @@ const Home = () => {
               <span className="typewriter-container">
                 <span className="typewriter">{displayedPhrase}</span>
               </span>
-            </span>.
+            </span>
           </h2>
           <p className="text-gray-500 max-w-md text-base lg:text-lg mb-4 text-justify">
             I'm a full stack web developer, crafting innovative web solutions.
