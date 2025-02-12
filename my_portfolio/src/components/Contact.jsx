@@ -1,5 +1,5 @@
 import React from "react";
-import leetcode from "../assets/leetcode.svg";
+import leetcode from "../assets/leetcode.png";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
@@ -85,11 +85,11 @@ const Contact = () => {
             rel="noopener noreferrer"
             className="text-white text-2xl hover:text-gray-400"
           >
-            <img src={leetcode} alt="LeetCode" className="w-6 h-6 rounded" />
+            <img src={leetcode} alt="LeetCode" className="text-white w-7 h-7 rounded" />
           </a>
           <a
-            href="public\RESUME.pdf"
-            target="_blank"
+            href="/resume.pdf"
+            download="resume"
             rel="noopener noreferrer"
             className="text-white text-2xl hover:text-gray-400"
           >
