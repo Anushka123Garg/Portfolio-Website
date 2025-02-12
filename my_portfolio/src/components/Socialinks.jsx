@@ -43,7 +43,8 @@ const Socialinks = () => {
       ),
       href: '/resume.pdf',
       style: "rounded-br-md",
-      download: true,
+      download: 'Anushka_Garg.pdf',
+
     },
   ]
 
@@ -57,8 +58,9 @@ const Socialinks = () => {
               ' ' + style}>
             <a href={href}
               className='flex justify-between items-center w-full text-white'
-              download={download}
-              target='_blank'
+              download={download ? download : undefined}
+              target={download ? '_self' : '_blank'}
+              type={download ? 'application/pdf' : undefined}
               rel="noreferrer"
             >
 
