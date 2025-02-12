@@ -41,11 +41,11 @@ const Socialinks = () => {
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: '/resume.pdf',
+      href: '/RESUME.pdf',
       style: "rounded-br-md",
       download: 'Anushka_Garg.pdf',
 
-    },
+    },  
   ]
 
   return (

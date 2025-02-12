@@ -88,7 +88,7 @@ const Contact = () => {
             <img src={leetcode} alt="LeetCode" className="text-white w-7 h-7 rounded" />
           </a>
           <a
-            href="/resume.pdf"  
+            href="/RESUME.pdf"  
             download= "Anushka_Garg.pdf"
             type='application/pdf' 
             rel="noopener noreferrer"
