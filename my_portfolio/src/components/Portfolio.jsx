@@ -12,9 +12,9 @@ const Portfolio = () => {
     { id: 1, src: wordify, title: "Wordify", demoLink: "https://wordifyy.netlify.app/", codeLink: "https://github.com/Anushka123Garg/WORDIFY" },
     { id: 2, src: weather, title: "Time Series Analysis", codeLink: "https://github.com/Anushka123Garg/Time-Series-Analysis" },
     { id: 3, src: portfolio, title: "Portfolio Website", demoLink: "https://portfolio-website-7-72vs.onrender.com/", codeLink: "https://github.com/Anushka123Garg/Portfolio-Website" },
-    { id: 4, src: estate, title: "Real Estate Platform", demoLink: "", codeLink: "https://github.com/Anushka123Garg/Real-Estate" },
-    { id: 5, src: mltool, title: "Automated ML Script", demoLink: "", codeLink: "https://github.com/Anushka123Garg/Automated-ML-Tool-Classifier" },
-    { id: 6, src: college, title: "College Management System", demoLink: "", codeLink: "https://github.com/example/repo6" },
+    { id: 4, src: estate, title: "Real Estate Platform", demoLink: "https://real-estate-xbh8.onrender.com/", codeLink: "https://github.com/Anushka123Garg/Real-Estate" },
+    { id: 5, src: mltool, title: "Automated ML Script", codeLink: "https://github.com/Anushka123Garg/Automated-ML-Tool-Classifier" },
+    { id: 6, src: college, title: "College Management System", codeLink: "https://github.com/Anushka123Garg/College-Management-system" },
   ];
 
   return (
